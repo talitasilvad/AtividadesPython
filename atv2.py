@@ -29,7 +29,6 @@ while True:
         hora24 = int(input("Digite a hora (formato 24 horas, valor negativo para encerrar): "))
         if hora24 < 0:
             break
-        
         minuto = int(input("Digite os minutos: "))
         conversor = ConversorHorario(hora24, minuto)
         resultado = conversor.converter12horas()
