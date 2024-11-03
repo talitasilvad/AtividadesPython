@@ -5,7 +5,7 @@ class Pessoa:
         self.peso = peso
         self.altura = altura
 
-    def envelhecer(self, anos=0):
+    def envelhecer(self, anos):
         for _ in range(anos):
             self.idade += 1
             if self.idade < 21:
