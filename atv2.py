@@ -21,7 +21,7 @@ class ConversorHorario:
             hora12 = self.hora24 - 12
         return f"{hora12}:{self.minuto:02d} {periodo}"
 
-    def exibir_mensagem(mensagem):
+    def exibirMensagem(mensagem):
         print(mensagem)
 
 while True:
@@ -32,7 +32,7 @@ while True:
         minuto = int(input("Digite os minutos: "))
         conversor = ConversorHorario(hora24, minuto)
         resultado = conversor.converter12horas()
-        ConversorHorario.exibir_mensagem(f"Horário convertido: {resultado}")
+        ConversorHorario.exibirMensagem(f"Horário convertido: {resultado}")
     
     except ValueError:
         print("Por favor, digite valores inteiros válidos para hora e minutos.")
