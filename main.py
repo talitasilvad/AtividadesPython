@@ -20,7 +20,19 @@ class Pessoa:
     def crescer(self, cm):
         self.altura += cm
 
-pessoa = Pessoa("Carlos", 18, 80, 170)
+pessoa = Pessoa("Carlos", 9, 60, 159)
+pessoa.envelhecer(11)
+pessoa.engordar(12)    
+pessoa.emagrecer(4)   
+pessoa.crescer(0)
+
+print(f"Nome: {pessoa.nome}")
+print(f"Idade: {pessoa.idade} anos")
+print(f"Peso: {pessoa.peso} kg")
+print(f"Altura: {pessoa.altura} cm")
+print("")
+
+pessoa = Pessoa("Gabriela", 27, 70, 170)
 pessoa.envelhecer(11)
 pessoa.engordar(12)    
 pessoa.emagrecer(4)   
